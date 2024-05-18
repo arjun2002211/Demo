@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:rgb(255, 235, 210);
+            height: 100vh;
+        }
+        .banner{
+            width: 250px;
+            /* height: 500px; */
+            border: 2px solid;
+            position: relative;
+            margin: auto;
+            text-align: center;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        img {
+            width: 100%;
+            filter: blur(2px);
+            /* position: absolute; */
+            display: block;
+            transition: 0.5s;
+        }
+
+        span {
+            position: absolute;
+            bottom: -60px;
+            /* z-index: 1; */
+            color: white;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.514);
+            width: 100%;
+            display: block;
+            transition: .5s all ease;
+            padding: 10px 0px;
+        }
+
+        .banner:hover span   {
+            bottom: 0;
+            transition: .5s all ease-in-out
+        }
+        .banner:hover img{
+            transform: scale(1.1);
+            transition:all ease 0.5s;
+            filter: blur(0);
+        }
+    </style>
+</head>
+
+<body>
+        <div class="banner">
+            <img src="img/arjun.jpg" alt="">
+            <span class="text">Lorem, ipsum dolor.</span>
+        </div>
+</body>
+
+</html>
